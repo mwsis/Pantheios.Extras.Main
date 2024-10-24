@@ -87,7 +87,7 @@ void test_throw_int_NO_CATCHALL(void)
 {
     struct inner
     {
-        static int fn(int, char**)
+        static int fn(int, char*[])
         {
             throw 12345;
 

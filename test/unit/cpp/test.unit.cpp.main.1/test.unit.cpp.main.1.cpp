@@ -204,12 +204,11 @@ namespace
 namespace
 {
 
-
 static void test_returns_EXIT_SUCCESS()
 {
     struct inner
     {
-        static int fn(int argc, char** argv)
+        static int fn(int argc, char* argv[])
         {
             XTESTS_TEST_INTEGER_EQUAL(1, argc);
             XTESTS_TEST_MULTIBYTE_STRING_EQUAL("arg0", argv[0]);
@@ -228,7 +227,7 @@ static void test_returns_EXIT_FAILURE()
 {
     struct inner
     {
-        static int fn(int, char**)
+        static int fn(int, char*[])
         {
           return EXIT_FAILURE;
         };
@@ -243,7 +242,7 @@ static void test_throws_std_runtime_error()
 {
     struct inner
     {
-        static int fn(int, char**)
+        static int fn(int, char*[])
         {
             throw std::runtime_error("oops");
 
@@ -260,7 +259,7 @@ static void test_throws_std_bad_alloc()
 {
     struct inner
     {
-        static int fn(int, char**)
+        static int fn(int, char*[])
         {
             throw std::bad_alloc();
 

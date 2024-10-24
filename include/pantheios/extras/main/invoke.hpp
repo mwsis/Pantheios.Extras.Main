@@ -58,7 +58,7 @@
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_MAJOR       1
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_MINOR       5
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_REVISION    3
-# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_EDIT        34
+# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_EDIT        35
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
 /* /////////////////////////////////////////////////////////////////////////
@@ -657,7 +657,7 @@ namespace ximpl_invoke
     prepare_invoker_m_(
         int                 argc
     ,   char**              argv
-    ,   int (STLSOFT_CDECL* pfnMain)(int, char**)
+    ,   int (STLSOFT_CDECL* pfnMain)(int, char*[])
     ,   char const*         programName
     )
     {
@@ -843,7 +843,7 @@ int
 invoke(
     int                 argc
 ,   char**              argv
-,   int (STLSOFT_CDECL* pfnMain)(int, char**)
+,   int (STLSOFT_CDECL* pfnMain)(int, char*[])
 ,   char const*         programName
 )
 {
@@ -928,7 +928,7 @@ int
 invoke(
     int                 argc
 ,   char**              argv
-,   int (STLSOFT_CDECL* pfnMain)(int, char**)
+,   int (STLSOFT_CDECL* pfnMain)(int, char*[])
 )
 {
     return ximpl_invoke::prepare_invoker_m_(argc, argv, pfnMain, NULL);

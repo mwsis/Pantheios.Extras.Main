@@ -120,7 +120,7 @@ void test_throw_int_USE_CATCHALL(void)
 {
     struct inner
     {
-        static int fn(int, char**)
+        static int fn(int, char*[])
         {
             throw 12345;
 
