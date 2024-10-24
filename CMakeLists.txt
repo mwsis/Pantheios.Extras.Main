@@ -187,6 +187,20 @@ if(BUILD_TESTING)
 endif(BUILD_TESTING)
 
 
+# ############################
+# MFC
+
+if(USE_MFC)
+
+	if(WIN32)
+
+	    message("-- using MFC")
+
+		set(CMAKE_MFC_FLAG 1)
+	endif(WIN32)
+endif(USE_MFC)
+
+
 # ################################################
 # includes - 2
 

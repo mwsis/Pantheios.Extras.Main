@@ -8,6 +8,7 @@ MakeCmd=${SIS_CMAKE_COMMAND:-make}
 
 Configuration=Release
 ExamplesDisabled=0
+MFC=0
 MinGW=0
 RunMake=0
 TestingDisabled=0
@@ -35,6 +36,10 @@ while [[ $# -gt 0 ]]; do
     -T|--disable-testing)
 
       TestingDisabled=1
+      ;;
+    --mfc)
+
+      MFC=1
       ;;
     --mingw)
 
@@ -80,6 +85,9 @@ Flags/options:
         necessary, for example, when installing on a system that does not
         (yet) have xTests - which itself depends on STLSOFT - installed
 
+    --mfc
+        enables MFC (Windows-only)
+
     --mingw
         uses explicitly the "MinGW Makefiles" generator
 
@@ -121,12 +129,14 @@ cd $CMakeDir
 echo "Executing CMake (in ${CMakeDir})"
 
 if [ $ExamplesDisabled -eq 0 ]; then CMakeBuildExamplesFlag="ON" ; else CMakeBuildExamplesFlag="OFF" ; fi
+if [ $MFC -ne 0 ]; then CMakeMfcVariable="-DUSE_MFC:BOOL=ON" ; else CMakeMfcVariable="" ; fi
 if [ $TestingDisabled -eq 0 ]; then CMakeBuildTestingFlag="ON" ; else CMakeBuildTestingFlag="OFF" ; fi
 if [ $VerboseMakefile -eq 0 ]; then CMakeVerboseMakefileFlag="OFF" ; else CMakeVerboseMakefileFlag="ON" ; fi
 
 if [ $MinGW -ne 0 ]; then
 
   cmake \
+    $CMakeMfcVariable \
     -DBUILD_EXAMPLES:BOOL=$CMakeBuildExamplesFlag \
     -DBUILD_TESTING:BOOL=$CMakeBuildTestingFlag \
     -DCMAKE_BUILD_TYPE=$Configuration \
@@ -137,6 +147,7 @@ if [ $MinGW -ne 0 ]; then
 else
 
   cmake \
+    $CMakeMfcVariable \
     -DBUILD_EXAMPLES:BOOL=$CMakeBuildExamplesFlag \
     -DBUILD_TESTING:BOOL=$CMakeBuildTestingFlag \
     -DCMAKE_BUILD_TYPE=$Configuration \
