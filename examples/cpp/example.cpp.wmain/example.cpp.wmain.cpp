@@ -4,7 +4,7 @@
  * Purpose: Implementation file for the example.cpp.wmain library.
  *
  * Created: 13th October 2015
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -18,6 +18,8 @@
 // The Worst Form of Error Handling, Apart From All The Others" for details
 // (http://quality-matters-to.us/).
 #define PANTHEIOS_EXTRAS_MAIN_USE_CATCHALL
+#define PANTHEIOS_USE_WIDE_STRINGS
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -35,13 +37,17 @@
 /* Standard C header files */
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * globals
  */
 
 PANTHEIOS_EXTERN_C PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING("example.cpp.wmain");
 
-/* ////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////
+ * main()
+ */
 
 int main0(int argc, wchar_t* argv[])
 {
@@ -70,8 +76,8 @@ int main0(int argc, wchar_t* argv[])
         }
     }
 
-    printf(
-        "USAGE: %s {memory|root|other}\n"
+    wprintf(
+        L"USAGE: %s {memory|root|other}\n"
     ,   argv[0]
     );
 
@@ -82,6 +88,7 @@ int wmain(int argc, wchar_t* argv[])
 {
     return pantheios::extras::main::invoke(argc, argv, main0);
 }
+
 
 /* ///////////////////////////// end of file //////////////////////////// */
 
