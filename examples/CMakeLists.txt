@@ -25,10 +25,13 @@ if(WIN32)
 endif(WIN32)
 
 
-if((MSVC) AND (MSVC_VERSION GREATER_EQUAL 1914))
+if(MSVC)
 
-	add_compile_options("/Zc:__cplusplus")
-endif()
+	if(MSVC_VERSION GREATER_EQUAL 1914)
+
+		add_compile_options("/Zc:__cplusplus")
+	endif()
+endif(MSVC)
 
 
 set(GCC_WARN_NO_cxx11_long_long "")
