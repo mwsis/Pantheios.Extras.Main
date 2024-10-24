@@ -4,7 +4,7 @@
  * Purpose: Implementation file for the test.unit.cpp.main.1 library.
  *
  * Created: 11th January 2011
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -130,7 +130,7 @@ namespace
 
 
 /* /////////////////////////////////////////////////////////////////////////
- * Constants & Globals
+ * constants & globals
  */
 
 extern "C" PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING("test.unit.cpp.main.1");
