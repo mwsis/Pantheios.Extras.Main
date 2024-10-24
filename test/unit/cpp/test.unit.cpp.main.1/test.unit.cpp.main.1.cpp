@@ -136,7 +136,7 @@ static char const STUB_FILE_NAME[] = "test.unit.cpp.main.1.stub_file";
 
 
 /* /////////////////////////////////////////////////////////////////////////
- * main
+ * main()
  */
 
 int main(int argc, char* argv[])
