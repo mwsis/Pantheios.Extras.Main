@@ -61,6 +61,7 @@ namespace util {
 namespace
 {
 
+    static FILE* stderr_real = stderr;
     static FILE* stderr_stub = NULL;
 } /* anonymous namespace */
 
@@ -88,6 +89,8 @@ namespace
 #include <xtests/xtests.h>
 
 /* STLSoft header files */
+#include <stlsoft/api/internal/stdio.h>
+#include <stlsoft/error/error_desc.hpp>
 #include <stlsoft/smartptr/scoped_handle.hpp>
 
 /* Standard C header files */
@@ -146,7 +149,16 @@ int main(int argc, char* argv[])
 
     XTESTS_COMMANDLINE_PARSEVERBOSITY(argc, argv, &verbosity);
 
-    stderr_stub = ::fopen(STUB_FILE_NAME, "w");
+    int r = STLSOFT_API_INTERNAL_stdio_fopen_m(STUB_FILE_NAME, "w", &stderr_stub);
+
+    if (0 != r)
+    {
+        stlsoft::error_desc ed(r);
+
+        fprintf(stderr_real, "%s: failed to open stub file: %s", argv[0], ed.c_str());
+
+        return EXIT_FAILURE;
+    }
 
     stlsoft::scoped_handle<char const*> scoper_file(STUB_FILE_NAME, ::remove);
     stlsoft::scoped_handle<FILE*>       scoper_file_handle(stderr_stub, ::fclose);
