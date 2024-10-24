@@ -4,7 +4,7 @@
  * Purpose: Implementation file for the example.c.main.1 library.
  *
  * Created: 5th January 2011
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -21,11 +21,13 @@
 /* Standard C header files */
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * globals
  */
 
 PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING("example.c.main.1");
+
 
 /* ////////////////////////////////////////////////////////////////////// */
 
@@ -51,4 +53,6 @@ int main(int argc, char* argv[])
     return pantheios_extras_main_invoke(argc, argv, main0, NULL, NULL);
 }
 
+
 /* ///////////////////////////// end of file //////////////////////////// */
+

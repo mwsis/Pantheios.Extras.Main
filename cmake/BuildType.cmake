@@ -5,7 +5,7 @@
 # Purpose:  CMake module file (for BuildType)
 #
 # Created:  16th October 2019
-# Updated:  24th October 2024
+# Updated:  25th October 2024
 #
 # ######################################################################## #
 
@@ -54,6 +54,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
         "Debug" "Release" "MinSizeRel" "RelWithDebInfo"
     )
 endif()
+
 
 # ############################## end of file ############################# #
 

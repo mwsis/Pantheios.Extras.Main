@@ -1,15 +1,15 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/main/internal/common.hpp
+ * File:    pantheios/extras/main/internal/common.hpp
  *
- * Purpose:     Definition of common features header for the
- *              Pantheios.Extras.Main library for C++ compilation.
+ * Purpose: Definition of common features header for the
+ *          Pantheios.Extras.Main library for C++ compilation.
  *
- * Created:     6th January 2011
- * Updated:     17th January 2021
+ * Created: 6th January 2011
+ * Updated: 25th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2019-2021, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
  * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
@@ -50,6 +50,7 @@
 #ifndef PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON
 #define PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * version information
  */
@@ -58,14 +59,16 @@
 # define PANTHEIOS_MAIN_EXTRAS_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON_MAJOR    1
 # define PANTHEIOS_MAIN_EXTRAS_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON_MINOR    0
 # define PANTHEIOS_MAIN_EXTRAS_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON_REVISION 2
-# define PANTHEIOS_MAIN_EXTRAS_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON_EDIT     7
+# define PANTHEIOS_MAIN_EXTRAS_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_HPP_COMMON_EDIT     8
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
  */
 
 #include <pantheios/extras/main/internal/common.h>
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * compatibility checks
@@ -74,6 +77,7 @@
 #if defined(PANTHEIOS_NO_NAMESPACE)
 # error Pantheios.Extras.Main library does not (currently) support no-namespace operation
 #endif /* !PANTHEIOS_NO_NAMESPACE */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * namespace
@@ -104,6 +108,7 @@ namespace main
 } // namespace main
 } // namespace extras
 } // namespace pantheios
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * inclusion

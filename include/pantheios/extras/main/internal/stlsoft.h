@@ -1,14 +1,14 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/main/internal/stlsoft.h
+ * File:    pantheios/extras/main/internal/stlsoft.h
  *
- * Purpose:     "Entry point" include into the STLSoft libraries.
+ * Purpose: Entry point" include into the STLSoft libraries.
  *
- * Created:     6th January 2011
- * Updated:     11th February 2021
+ * Created: 6th January 2011
+ * Updated: 25th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2019-2021, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
  * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
@@ -48,6 +48,7 @@
 #ifndef PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT
 #define PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * version information
  */
@@ -56,8 +57,9 @@
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT_MAJOR     1
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT_MINOR     0
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT_REVISION  6
-# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT_EDIT      11
+# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_STLSOFT_EDIT      12
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -66,6 +68,7 @@
 #ifndef STLSOFT_INCL_STLSOFT_H_STLSOFT
 # include <stlsoft/stlsoft.h>
 #endif /* !STLSOFT_INCL_STLSOFT_H_STLSOFT */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * compatibility checks
@@ -106,6 +109,7 @@
 
 # error Pantheios.Extras.Main requires that STLSoft`s namespace has not been disabled in C++ compilation
 #endif /* _STLSOFT_NO_NAMESPACE */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * inclusion

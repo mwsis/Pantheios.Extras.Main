@@ -4,7 +4,7 @@
  * Purpose: Definition of the pantheios::extras::main::invoke overloads.
  *
  * Created: 29th December 2010
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * Home:    http://www.pantheios.org/
  *
@@ -58,8 +58,9 @@
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_MAJOR       1
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_MINOR       5
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_REVISION    3
-# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_EDIT        35
+# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_HPP_INVOKE_EDIT        36
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -90,6 +91,7 @@
 /* Standard C header files */
 #include <stdio.h>
 #include <stdlib.h>
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * feature control

@@ -1,14 +1,14 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/main.h
+ * File:    pantheios/extras/main.h
  *
- * Purpose:     Main C header for the Pantheios.Extras.Main library.
+ * Purpose: Main C header for the Pantheios.Extras.Main library.
  *
- * Created:     29th December 2010
- * Updated:     17th January 2021
+ * Created: 29th December 2010
+ * Updated: 25th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2019-2021, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
  * Copyright (c) 2010-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
@@ -49,6 +49,7 @@
 #ifndef PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_H_MAIN
 #define PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_H_MAIN
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * version information
  */
@@ -57,8 +58,9 @@
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_H_MAIN_MAJOR    1
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_H_MAIN_MINOR    0
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_H_MAIN_REVISION 2
-# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_H_MAIN_EDIT     7
+# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_H_MAIN_EDIT     8
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -67,6 +69,7 @@
 #include <pantheios/extras/main/internal/common.h>
 
 #include <pantheios/extras/main/invoke.h>
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * inclusion

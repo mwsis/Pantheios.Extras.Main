@@ -4,7 +4,7 @@
  * Purpose: Implementation file for the example.cpp.main.MFC library.
  *
  * Created: 5th January 2011
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -24,6 +24,7 @@
 /* Standard C header files */
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * globals
  */
@@ -32,7 +33,10 @@
 
 PANTHEIOS_EXTERN_C PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING(PROCESS_IDENTITY);
 
-/* ////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////
+ * main()
+ */
 
 int main0(int /* argc */, char* /* argv */[])
 {
@@ -56,4 +60,6 @@ int main(int argc, char* argv[])
     return pantheios::extras::main::invoke(argc, argv, main0, PROCESS_IDENTITY);
 }
 
+
 /* ///////////////////////////// end of file //////////////////////////// */
+

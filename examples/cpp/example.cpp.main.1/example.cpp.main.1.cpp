@@ -4,7 +4,7 @@
  * Purpose: Implementation file for the example.cpp.main.1 library.
  *
  * Created: 5th January 2011
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -18,6 +18,7 @@
 // The Worst Form of Error Handling, Apart From All The Others" for details
 // (http://quality-matters-to.us/).
 #define PANTHEIOS_EXTRAS_MAIN_USE_CATCHALL
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -35,13 +36,17 @@
 /* Standard C header files */
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * globals
  */
 
 PANTHEIOS_EXTERN_C PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING("example.cpp.main.1");
 
-/* ////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////
+ * main()
+ */
 
 #ifndef USE_wmain
 
@@ -84,7 +89,6 @@ int main(int argc, char* argv[])
 {
     return pantheios::extras::main::invoke(argc, argv, main0);
 }
-
 #else // ? USE_wmain
 
 int main0(int argc, wchar_t** argv)
@@ -126,8 +130,8 @@ int wmain(int argc, wchar_t** argv)
 {
     return pantheios::extras::main::invoke(argc, argv, main0);
 }
-
 #endif // !USE_wmain
+
 
 /* ///////////////////////////// end of file //////////////////////////// */
 

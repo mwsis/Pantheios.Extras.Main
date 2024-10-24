@@ -5,7 +5,7 @@
  *          Pantheios.Extras.Main library.
  *
  * Created: 6th January 2011
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * Home:    http://www.pantheios.org/
  *
@@ -49,6 +49,7 @@
 
 #ifndef PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_COMMON
 #define PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_INTERNAL_H_COMMON
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * version information

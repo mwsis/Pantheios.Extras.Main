@@ -4,7 +4,7 @@
  * Purpose: Definition of the pantheios_extras_main_invoke() function.
  *
  * Created: 29th December 2010
- * Updated: 24th October 2024
+ * Updated: 25th October 2024
  *
  * Home:    http://www.pantheios.org/
  *
@@ -50,6 +50,7 @@
 #ifndef PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_H_INVOKE
 #define PANTHEIOS_EXTRAS_MAIN_INCL_PANTHEIOS_EXTRAS_MAIN_H_INVOKE
 
+
 /* /////////////////////////////////////////////////////////////////////////
  * version information
  */
@@ -58,8 +59,9 @@
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_H_INVOKE_MAJOR     1
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_H_INVOKE_MINOR     2
 # define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_H_INVOKE_REVISION  4
-# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_H_INVOKE_EDIT      18
+# define PANTHEIOS_EXTRAS_MAIN_VER_PANTHEIOS_EXTRAS_MAIN_H_INVOKE_EDIT      19
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * includes
@@ -80,6 +82,7 @@
 /* Standard C header files */
 #include <stdio.h>
 #include <stdlib.h>
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * API functions
@@ -203,6 +206,7 @@ pantheios_extras_main_invoke(
         return mr;
     }
 }
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * inclusion
